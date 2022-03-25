@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Vaga } from './models/Vagas.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class VagasService {
 
-  private url = "";
+  private url = "http://localhost:3000/vagas";
 
   constructor(private _httpClient: HttpClient) { }
 

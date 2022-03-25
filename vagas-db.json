@@ -1,5 +1,5 @@
 {
-    "Vagas": [
+    "vagas": [
         {
             "id": 1,
             "nome": "Desenvolvedor Front-End",

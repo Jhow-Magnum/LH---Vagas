@@ -1,0 +1,21 @@
+body{
+    width:90%;
+    margin: 0 auto;
+    min-width:600px;
+    max-width:2000p
+}
+
+.lista_de_vagas{
+    display: flex;
+    flex-direction: row ;
+}
+
+.lista_de_vagas .card{
+    margin: 5px 10px ;
+    min-height: 400px;
+}
+
+.lista_de_vagas .card-img-top{
+    min-height: 190px;
+}
+
