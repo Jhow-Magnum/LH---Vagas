@@ -1,1 +1,30 @@
-<p>painel-vagas works!</p>
+<form class="row m-3 col m-4" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >
+    <div class="col-md-6">
+      <label class="form-label">Id</label>
+      <input type="number"  name="id" class="form-control" [(ngModel)] = "vaga.id">
+    </div>
+    <div class="col-8">
+      <label class="form-label">Nome</label>
+      <input type="text" name="nome" class="form-control" [(ngModel)] = "vaga.nome" >
+    </div>
+    <div class="col-6">
+      <label  class="form-label">Foto</label>
+      <input type="text" name="foto" class="form-control"[(ngModel)] = "vaga.foto">
+    </div>
+    <div class="col-12">
+      <label  class="form-label">Descrição da Vaga</label>
+      <input type="text"  name="descricao" class="form-control" [(ngModel)] = "vaga.descricao">
+    </div>
+    <div class="col-md-4">
+        <label  class="form-label">Salário</label>
+        <input type="text" name="salario" class="form-control" [(ngModel)] = "vaga.salario">
+      </div>
+    
+
+    <div class="btn-group p-2  gap-2" role="group" aria-label="Basic mixed styles example">
+        <button type="button" (click)="cadastrar()" class="btn btn-success">Cadastrar Vaga</button>
+        <button type="button" (click)="atualizar(vaga.id)" class="btn btn-warning">Atualizar Vaga</button>
+        <button type="button" (click)="excluir(vaga.id)" class="btn btn-danger">Deletar Vaga</button>
+       
+      </div>
+  </form>
